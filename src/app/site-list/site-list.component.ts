@@ -3,11 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { PasswordManagerService } from '../services/password-manager.service';
 import { Observable } from 'rxjs';
 import { AsyncPipe, CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-site-list',
   standalone: true,
-  imports: [FormsModule, CommonModule, AsyncPipe],
+  imports: [FormsModule, CommonModule, AsyncPipe, RouterLink],
   templateUrl: './site-list.component.html',
   styleUrl: './site-list.component.css'
 })
